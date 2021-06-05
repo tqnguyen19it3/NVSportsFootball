@@ -1,0 +1,397 @@
+@media (max-width:1280px){
+	.tg-navigation .tg-colhalf:last-child ul li:last-child ul{
+		left:auto;
+		right:0;
+	}
+	.tg-home-slider .tg-btnbox{
+		width: 72%;
+		float: none;
+		margin: 0 auto;
+	}
+	.tg-slider-content h1 {
+		font-size: 120px;
+		line-height: 106px;
+	}
+}
+@media (max-width:1199px){
+	.tg-navigation .tg-colhalf {padding: 0 60px 0 0;}
+	.tg-navigation .tg-colhalf + .tg-colhalf {padding: 0 0 0 60px;}
+	.tg-navigation ul li {padding: 20px 9px;}
+	.tg-navigation ul li a{
+		font-size:15px;
+		line-height:18px;
+	}
+	.tg-slider-content h1 {
+		font-size: 100px;
+		line-height: 86px;
+	}
+	.tg-home-slider .tg-btnbox {width: 73%;}
+	.tg-section-heading h2 {
+		font-size: 20px;
+		line-height: 23px;
+	}
+	.tg-match h3 {
+		font-size: 20px;
+		line-height: 23px;
+	}
+	.tg-matchhover .tg-btnbox .tg-btn {padding: 0 18px;}
+	
+	.tg-counter{width:130px;}
+
+	.tg-statistic.tg-goals span.tg-icon,
+	.tg-statistic.tg-earnedawards span.tg-icon,
+	.tg-statistic.tg-activeplayers span.tg-icon,
+	.tg-statistic.tg-activeteams span.tg-icon {right: 0;}
+	.tg-statistic.tg-earnedawards span.tg-icon {right: 35px;}
+}
+@media (max-width:991px){
+	.tg-logo {
+		height:auto;
+	}
+	.tg-colhalf {padding:30px 40px 15px 0;}
+	.tg-colhalf + .tg-colhalf{
+		padding:30px 0 15px 40px;
+	}
+	.tg-navigation .tg-colhalf:first-child::after {right: 40px;}
+	.tg-navigation .tg-colhalf:last-child::after {left: 40px;}
+	.tg-navigation .tg-colhalf {padding: 0 40px 0 0;}
+	.tg-navigation .tg-colhalf + .tg-colhalf{padding: 0 0 0 40px;}
+	.tg-slider-content h1 {
+		font-size: 80px;
+		line-height: 72px;
+	}
+	.tg-home-slider .tg-btnbox {
+		max-width: 700px;
+		width:100%;
+	}
+	.tg-matchresult{margin:0 0 30px;}
+	.tg-matchresult:before {display:none;}
+	.tg-latestresult .tg-contentbox{margin:0 0 30px;}
+	.tg-matchhover .tg-btnbox .tg-btn {padding: 0 30px;}
+	.tg-match h3 {
+		font-size: 26px;
+		line-height: 26px;
+	}
+	.tg-matchresult:after{width:50%;}
+	.tg-contactinfobox{ padding:0 0 50px;}
+	.tg-themetabnav{ width:510px;}
+}
+@media (max-width:800px){
+	.tg-home-slider {padding: 140px 0 30px;}
+	.tg-home-slider .tg-btnbox {
+		max-width: 480px;
+		width:100%;
+	}
+	.tg-slider-content .tg-btnbox h2 {
+		font-size: 20px;
+		line-height: 20px;
+		margin:18px 0;
+	}
+	.tg-slider-content .tg-btnbox .tg-btn{padding:0 35px;}
+	.tg-home-slider .swiper-slide figure {padding: 0 32%;}
+}
+@media (max-width:767px){
+	.tg-topbar{
+		top:0;
+		left:0;
+		float:none;
+		position:absolute;
+	}
+	.tg-colhalf + .tg-colhalf,
+	.tg-colhalf {
+		width:auto;
+		float:left;
+		padding:15px 0;
+	}
+	.tg-colhalf{ padding:16px 0;}
+	.tg-colhalf + .tg-colhalf{ float:right;}
+	.tg-topbar .tg-colhalf + .tg-colhalf,
+	.tg-topbar .tg-colhalf{ padding:10px;}
+	.tg-topbar .tg-colhalf ul{ text-align:center;}
+	.tg-topbar .tg-colhalf + .tg-colhalf ul li:last-child,
+	.tg-topbar .tg-colhalf ul li:first-child,
+	.tg-topbar .tg-colhalf + .tg-colhalf ul li,
+	.tg-topbar .tg-colhalf ul li{
+		float:none;
+		padding:0 15px;
+		display:inline-block;
+		vertical-align:middle;
+	}
+	.tg-topbar  .tg-colhalf,
+	.tg-topbar  .tg-colhalf .tg-addnav,
+	.tg-topbar  .tg-colhalf .tg-addnav ul{width:100%;}
+	.tg-topbar .tg-addnav ul li:before{ display:none;}
+	.tg-topbar .tg-addnav ul li:first-child,
+	.tg-topbar .tg-addnav > ul > li{
+		padding:10px 0;
+		width:100%;
+	}
+	.tg-navigation ul{ width:100%;}
+	.tg-nav{
+		z-index:2;
+		position:relative;
+	}
+	.tg-nav .navbar-header{position:static; margin-left: 35px;}
+	.tg-topaddnav .navbar-header .navbar-toggle,
+	.tg-nav .navbar-header .navbar-toggle{
+		width:40px;
+		padding:0;
+		line-height:40px;
+		margin:67px 0 37px;
+	}
+	.tg-topaddnav .navbar-header .navbar-toggle{
+		float:left;
+		z-index:3;
+		position:relative;
+	}
+	.tg-addnavigationm-mobile{
+		border:none;
+		padding:10px 0;
+		width:280px;
+		box-shadow:none;
+		background:#373542;
+		position:absolute;
+		top:40px;
+		left:50px;
+		z-index:15;
+	}
+	.tg-addnavigationm-mobile.in{overflow-y:visible}
+	#tg-nav .tg-navigation{display:none;}
+	.tg-navigationm-mobile .tg-colhalf:first-child:after,
+	.tg-navigationm-mobile .tg-colhalf:after{ display:none;}
+	.tg-wrapper > .tg-navigationm-mobile{
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		float:none;
+		z-index:9999;
+		position:fixed;
+		padding:15% 25%;
+		display:block !important;
+		overflow:scroll;
+		background:rgba(55, 53, 66, 0.90);
+		-webkit-transform: translateY(-120%);
+		-moz-transform: translateY(-120%);
+		-ms-transform: translateY(-120%);
+		-o-transform: translateY(-120%);
+		transform: translateY(-120%);
+	}
+	.tg-wrapper > .tg-navigationm-mobile.in{
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+	.tg-navigation .tg-colhalf:last-child,
+	.tg-navigationm-mobile .tg-colhalf{
+		width:100%;
+		float:left;
+		padding:0 15px;
+	}
+	.tg-navigationm-mobile .tg-colhalf > ul > li{
+		width:100%;
+		float:left;
+		padding:0;
+		text-align:left;
+		position:relative;
+	}
+	.tg-navigationm-mobile .tg-colhalf > ul > li > a{
+		padding:10px;
+		display:block;
+	}
+	.tg-navigation > div > ul > li + li:before{ display:none;}
+	.tg-navigation .tg-colhalf:last-child ul li:last-child ul{
+		right:auto;
+		left:0;
+	}
+	.tg-navigation ul li ul{
+		width:100%;
+		float:left;
+		opacity:1;
+		display:none;
+		position:static;
+		visibility:visible;
+	}
+	.tg-home-slider {padding: 100px 0 0;}
+	.tg-home-slider .swiper-slide > div {width: 100%;}
+	.tg-slider-content h1 {
+		font-size: 60px;
+		line-height: 56px;
+	}
+	.tg-home-slider .tg-btnbox{
+		text-align:center;
+		max-width:100%;
+	}
+	.tg-slider-content .tg-btnbox .tg-btn{padding:0 30px;}
+	.tg-slider-content .tg-btnbox h2{
+		float:none;
+		display:block;
+		margin:0 0 30px;
+	}
+	.tg-home-slider .swiper-slide figure{padding: 32%;}
+
+	.tg-statistic.tg-goals span.tg-icon,
+	.tg-statistic.tg-earnedawards span.tg-icon,
+	.tg-statistic.tg-activeplayers span.tg-icon,
+	.tg-statistic.tg-activeteams span.tg-icon {right: 12px;}
+	.tg-statistic span.tg-icon {
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.tg-statistic h2 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.tg-statistic h3{
+		font-size:16px;
+		line-height:20px;
+	}
+
+	.tg-home-slider .swiper-slide figure{ display:none;}
+	.tg-themetabs .tg-themetabcontent img{
+		width:25%;
+		height:auto;
+		display:block;
+		clear:both;
+		margin:0 0 30px;
+		float:none;
+	}
+}
+@media (max-width:568px){
+	.tg-home-slider {padding: 130px 0 0;}
+	.tg-contactus,
+	.tg-tabnav,
+	.tg-tabscontent,
+	.tg-latestresult {padding: 0 0 0 30px;}
+	.tg-statistic{
+		width:40%;
+		padding:0;
+		margin:40px 5%;
+	}
+	.tg-statistic.tg-goals span.tg-icon,
+	.tg-statistic.tg-earnedawards span.tg-icon,
+	.tg-statistic.tg-activeplayers span.tg-icon,
+	.tg-statistic.tg-activeteams span.tg-icon {right: 45px;}
+	.tg-teamscore + .tg-teamscore,
+	.tg-teamscore{
+		width:100%;
+		padding:20px;
+	}
+	.tg-match{ padding:10px;}
+	.tg-matchresult::after {
+		top:auto;
+		bottom:0;
+		width: 100%;
+		height:50%;
+	}
+	.tg-match .tg-box .tg-teamlogo{ width:40px;}
+	.tg-match h4{
+		margin: 8px 0;
+		font-size:16px;
+		line-height:16px;
+	}
+	.tg-match h3{
+		margin:4px 0;
+		font-size:22px;
+		line-height:22px;
+	}
+	.tg-upcomingmatch {height: 280px;}
+	.tg-matchdetail{ padding:10px;}
+	.tg-upcomingmatch .tg-match .tg-box .tg-teamlogo{width:70px;}
+	.tg-upcomingmatch .tg-match .tg-box h3{
+		margin:25px 0;
+		font-size:20px;
+		line-height:23px;
+	}
+	.tg-matchhover{ padding:21px 10px 20px;}
+	.tg-matchhover .tg-btnbox .tg-btn {padding: 0 20px;}
+	.tg-tabscontent .tg-teamscore{ min-height:280px;}
+}
+@media (max-width:480px){
+	.tg-slider-content{
+		margin:0;
+		padding:0 38px;
+		position:static;
+	}
+	.tg-slider-content h1 {
+		font-size: 40px;
+		line-height: 40px;
+	}
+	.tg-upcomingmatch {height: 579px;}
+	.tg-matchdetail {padding: 20px;}
+	.tg-upcomingmatch .tg-match .tg-box:last-child,
+	.tg-upcomingmatch .tg-match .tg-box:first-child,
+	.tg-upcomingmatch .tg-match .tg-box {
+		width: 100%;
+		text-align:center;
+	}
+	.tg-upcomingmatch .tg-match .tg-box .tg-teamlogo{
+		width:50px;
+		float:none;
+		display:inline-block;
+		vertical-align:middle;
+	}
+	.tg-upcomingmatch .tg-match .tg-box h3{
+		margin:12px 0;
+		display:inline-block;
+		vertical-align:middle;
+	}
+	.tg-matchhover {padding: 32px 20px;}
+	.tg-matchhover address{ margin:39px 0 40px;}
+	.tg-matchhover .tg-btnbox .tg-btn{
+		width:100%;
+		text-align:center;
+	}
+	.tg-matchhover .tg-btnbox .tg-btn:first-child{ margin:0 0 15px;}
+	.tg-themetabs{padding: 0 0 80px 80px;}
+	.tg-oldmatchresult,
+	.tg-themetabcontent{padding: 10px;}
+}
+@media (max-width:479px){
+	.tg-slider-content h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.tg-home-slider .swiper-slide figure {padding: 0 20%;}
+	.tg-slider-content .tg-btnbox .tg-btn{
+		margin:0;
+		width:100%;
+		text-align:center;
+	}
+	.tg-slider-content .tg-btnbox .tg-btn:last-child{ margin:15px 0 0;}
+	.tg-section-name{left:5px;}
+	.tg-section-heading h2 {
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.tg-matchhover {padding: 20px;}
+	.tg-matchhover address{
+		width:100%;
+		margin:0 0 10px;
+	}
+	.tg-matchhover .tg-btnbox{
+		width:100%;
+		float:left;
+	}
+	.tg-matchhover .tg-btnbox .tg-btn{line-height:36px;}
+	.tg-socialicons li {padding: 0 13px;}
+	.tg-themetabs {padding: 0 0 80px 80px;}
+	.tg-themetabcontent {padding: 10px;}
+	.tg-oldmatchresult .tg-matchdetail{
+		width: 100%;
+		float: left;
+	}
+	.tg-oldmatchresult .tg-matchdetail h4{
+		font-size: 20px;
+		line-height: 23px;
+	}
+	.tg-wrapper > .tg-navigationm-mobile{padding:22% 10%;}
+}
+@media (max-width:360px){
+	.tg-slider-content h1 {
+		font-size: 26px;
+		line-height: 26px;
+	}
+}

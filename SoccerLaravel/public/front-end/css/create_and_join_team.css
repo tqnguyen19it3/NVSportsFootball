@@ -1,0 +1,318 @@
+		body {
+				background-image: url(../images/slider/img-05.jpg);
+				background-size: cover;
+				background-attachment: fixed;
+				font-family: 'Oswald', Arial, Helvetica, sans-serif;
+			}
+
+			.back-to-menu {
+				width: 150px;
+				height: 40px;
+				border: 1px solid #ffcc33;
+				margin-left: 5px;
+				margin-top: 10px;
+			}
+
+			.back-to-menu i {
+				float: left;
+				line-height: 40px;
+				font-size: 18px;
+				padding-right: 7px;
+				padding-left: 3px;
+				color: #f1f1f1;
+			}
+
+			.back-to-menu p {
+				float: left;
+				line-height: 38px;
+				font-size: 18px;
+				color: #f1f1f1;
+			}
+
+			.back-to-menu:hover{
+				background-color: white;
+				color: #3e3e3e;
+			}
+			.back-to-menu:hover i{
+				/*background-color: white;*/
+				color: #3e3e3e;
+			}
+			.back-to-menu:hover p{
+				/*background-color: white;*/
+				color: #3e3e3e;
+			}
+
+			.chuacodoi {
+				width: 75%;
+				height: auto;
+				background-color: #fff;
+				margin-left: 12%;
+				margin-top: 3%;
+			}
+
+			.tab-2 {
+				width: 100%;
+				height: 505px;
+				display: none;
+				margin-bottom:50px;
+			}
+
+			.tab-tham-gia-1-doi {
+				display: block;
+				height: auto;
+				width: 100%;
+				float: left;
+
+			}
+
+			.chuacodoi-top {
+				width: 100%;
+				height: 45px;
+				background-color: #373542;
+			}
+
+			.chuacodoi-top ul {
+				margin-left: 7px;
+			}
+
+			.chuacodoi-top ul li {
+				list-style: none;
+				float: left;
+				margin-right: 45px;
+				cursor: pointer;
+				width: 150px;
+				height: 45px;
+				text-align: center;
+			}
+
+			.chuacodoi-top ul li p {
+				line-height: 45px;
+				font-size: 18px;
+				font-family: 'Oswald', Arial, Helvetica, sans-serif;
+				font-weight: 500;
+				color: #ffcc33;
+			}
+
+			.active_2 {
+				width: 150px;
+				height: 40px;
+				margin-top: 5px;
+				background-color: #fff;
+				line-height: 20px;
+				text-align: center;
+			}
+
+			.tab-tham-gia-1-doi-top {
+				width: 100%;
+				height: 70px;
+				position: relative;
+			}
+
+			.text-shadow1 {
+				position: absolute;
+				left: 18%;
+				top: 20px;
+				color: white;
+  				text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  				font-size: 2.5vw;
+			}
+
+			.tab-tao-1-doi-moi h3{
+				color: white;
+  				text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  				font-size: 2.2vw;
+  				margin: 15px 0;
+			}
+
+			.tg-oldmatchresult {
+				width: 95%;
+				margin-left: 3%;
+			}
+
+			/*tao 1 doi moi*/
+			
+			#tendoitruong, #sodienthoai, #dotuoi, #trinhdo, #khuvuc,
+			#ghichu {
+				text-align: right;
+				padding-right: 25px;
+				font-size: 19px;
+			}
+			#ip_tendoitruong, #ip_sodienthoai {
+				border: none;
+				height: 30px;
+				margin-top: 10px;
+				font-size: 19px;
+				width: 100%;	
+
+			}
+
+			.select123{
+				border: none;
+				font-size: 15px;
+				width: 100%;
+			}
+
+			#ip_tendoitruong, #ip_sodienthoai {
+				font-size: 16px;
+			}
+			textarea {
+				width: 100%;
+				margin-top: 10px;
+				height: 70px;
+				padding-top: 3px;
+				padding-left: 7px;
+			}
+			
+			form {
+				
+				margin-top: 20px;
+			}
+
+			@media screen and (max-width: 1024px) {
+				.active_2 {
+					width: 110px;
+				}
+				.chuacodoi-top ul li {
+					width: 110px;
+					margin-right: 15px;
+				}
+				.chuacodoi-top ul li p {
+					font-size: 16px;
+				}
+
+				.tab-tham-gia-1-doi {
+					height: auto;
+				}
+				.tab-pane {
+					margin-top: 40px;
+				}
+
+				.tab-tham-gia-1-doi-top h3 {
+					left: 3%;
+					right: 3%;
+					text-align: center;
+  					font-size: 25px;
+				}
+
+				#tendoitruong, #sodienthoai, #dotuoi, #trinhdo, #khuvuc,
+				#ghichu {
+					text-align: left;
+					padding-right: 5px;
+				}
+
+				#ip_tendoitruong, #ip_sodienthoai{
+					text-align: left;
+					width: 100%;
+				}
+				textarea {
+					width: 100%;
+				}
+
+				.chuacodoi {
+					margin-top: 70px;
+				}
+				.btnsbox{
+					align-items: center;
+					text-align: center;
+				}
+				.tg-btn{
+					font-size:10px;
+					line-height:15px;
+					padding:5px 17px;
+					width: auto;
+					height: 28px;
+					align-items: center;
+					text-align: center;
+				}
+				.tg-theme-tag{
+					font-size:10px;
+					line-height:15px;
+					padding:5px 10px;
+					width: 100%;
+					height: 28px;
+					align-items: center;
+					text-align: center;
+				}
+				.tab-tao-1-doi-moi h3{
+					text-align: center;
+					font-size: 15px;
+				}
+				.tab-tao-1-doi-moi{
+					height: auto;
+				}
+			}
+
+			@media screen and (max-width: 414px) {
+				.active_2 {
+					width: 110px;
+				}
+				.chuacodoi-top ul li {
+					width: 110px;
+					margin-right: 15px;
+				}
+				.chuacodoi-top ul li p {
+					font-size: 16px;
+				}
+
+				.tab-tham-gia-1-doi {
+					height: auto;
+				}
+				.tab-pane {
+					margin-top: 40px;
+				}
+
+				.tab-tham-gia-1-doi-top h3 {
+					left: 3%;
+					right: 3%;
+					text-align: center;
+					font-size: 25px;
+				}
+
+				#tendoitruong, #sodienthoai, #dotuoi, #trinhdo, #khuvuc,
+				#ghichu {
+					text-align: left;
+					padding-right: 5px;
+				}
+
+				#ip_tendoitruong, #ip_sodienthoai, #dt, #td, #kv {
+					text-align: left;
+					width: 100%;
+				}
+				.btnsbox{
+					align-items: center;
+				}
+				.tg-btn{
+					font-size:10px;
+					line-height:15px;
+					padding:5px 17px;
+					width: 100%;
+					height: 28px;
+					align-items: center;
+					text-align: center;
+				}
+				.tg-theme-tag{
+					font-size:10px;
+					line-height:15px;
+					padding:5px 10px;
+					width: 100%;
+					height: 28px;
+					align-items: center;
+					text-align: center;
+				}
+				textarea {
+					width: 100%;
+					margin-left: 1px;
+				}
+
+				.chuacodoi {
+					margin-top: 70px;
+				}
+
+				.tab-tao-1-doi-moi h3{
+					text-align: center;
+					font-size: 15px;
+				}
+				.tab-tao-1-doi-moi{
+					height: auto;
+				}
+			}
