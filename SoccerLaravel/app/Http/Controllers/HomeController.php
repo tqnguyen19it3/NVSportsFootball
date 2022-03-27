@@ -110,17 +110,22 @@ class HomeController extends Controller
 
     public function send_mail(Request $request){
          //send mail
-                $to_name = "NV Sports Football";
-                $to_email = "tqnguyen.19it3@sict.udn.vn";//send to this email
-        
-                $data = array("email"=>$request->contact_mail,"name"=>$request->contact_name,"sdt"=>$request->contact_phonenumber,"message"=>$request->contact_message,"file"=>$request->contact_filename); //body of mail.blade.php
-            
-                Mail::send('send_mail',$data,function($message) use ($to_name,$to_email){
-                    $message->to($to_email)->subject('Thư phản hồi từ khách hàng');//send this mail with subject
-                    $message->from($to_email,$to_name);//send from this mail
+        // $data['user_email'] = $request->user_email;
+                $to_name = $request->contact_name;;
+                $to_email = $request->contact_email;
+                $phonenumber = $request->contact_phonenumber;
+                $body = $request->contact_message;
+                $file = $request->file('contact_filename');
+
+                $data = array("email"=>$to_email, "name"=>$to_name,"sdt"=>$phonenumber,"body"=>$body,"file"=>$file); //body of mail.blade.php
+                
+                Mail::send('send_mail',$data,function($message) use ($to_email, $to_name){
+                    $message->from($to_email,$to_name);
+                    $message->to('drhappykun.tqn@gmail.com')->subject('Thư phản hồi từ khách hàng NV Sports Football');//send this mail with subject
                 });
                 //--send mail
-                return Redirect::to('/')->with('message','');
+                // return Redirect::to('/')->with('message','');
+                return redirect()->back();
 
     }
 

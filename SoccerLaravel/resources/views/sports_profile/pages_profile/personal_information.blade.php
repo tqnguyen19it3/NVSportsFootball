@@ -212,147 +212,147 @@
 					<div  class="tg-main-section tg-haslayout">
 						<section class="wrapper">
 							<div class="col-sm-9 col-xs-12 pull-left">
-							<div class="tg-player-detail tg-haslayout">
-								<div class="tg-player-data tg-haslayout">
-									<div class="tg-player-info tg-haslayout">
-										@foreach($person_profile as $key => $profile)
-										<div class="row">
-											<div class="col-sm-4 col-xs-12">
-												<div class="tg-widget tg-imagewidget">
-													<figure>
-														<img src="{{URL::TO('../public/uploads/avatar-user/'.$profile->user_avatar)}}" alt="image description">
-													</figure>
+								<div class="tg-player-detail tg-haslayout">
+									<div class="tg-player-data tg-haslayout">
+										<div class="tg-player-info tg-haslayout">
+											@foreach($person_profile as $key => $profile)
+											<div class="row">
+												<div class="col-sm-4 col-xs-12">
+													<div class="tg-widget tg-imagewidget">
+														<figure>
+															<img src="{{URL::TO('../public/uploads/avatar-user/'.$profile->user_avatar)}}" alt="image description">
+														</figure>
+													</div>
 												</div>
-											</div>
-											<div class="col-sm-8 col-xs-12">
-												<div class="tg-playcontent">
-													<strong href="#" class="tg-theme-tag">Người dùng</strong>
-													<h3>{{ $profile->user_name }}</h3>
-												</div>
-												<?php
-					                                echo "<div class='text-center'>";
-					                                    echo "<h3 style='color:green;'>" ;
-					                                        $message = Session::get('message');
-					                                        if($message){
-					                                            echo $message;
-					                                            Session::put('message', null);
-					                                        }
-					                                    echo "</h3>";
-					                                echo "</div>";
-					                            ?> 
-												<ul>
-													<li>Họ và tên :</li>
-													<li>{{ $profile->user_name }}</li>
-													<li>Email :</li>
-													<li>{{ $profile->user_email }}</li>
-													<li>SĐT :</li>
-													<li>{{ $profile->user_phone }}</li>
-													<li>Độ tuổi :</li>
-													<li>{{ $profile->user_age }}</li>
-													<li>Giới tính :</li>
-													<li>{{ $profile->user_gender }}</li>
-													<li>Khu vực :</li>
-													<li>{{ $profile->user_city }}, TP. Đà Nẵng</li>
-													<li>Vị trí sở trường :</li>
-													<li>{{ $profile->user_clb_vt }}</li>
-												</ul>
-												<div class="tg-btnbox">
-													<button class="tg-btn" data-toggle="modal" data-target="#myModal" type="button" style="top: 20px;">Cập Nhật Lại</button>
+												<div class="col-sm-8 col-xs-12">
+													<div class="tg-playcontent">
+														<strong href="#" class="tg-theme-tag">Người dùng</strong>
+														<h3>{{ $profile->user_name }}</h3>
+													</div>
+													<?php
+						                                echo "<div class='text-center'>";
+						                                    echo "<h3 style='color:green;'>" ;
+						                                        $message = Session::get('message');
+						                                        if($message){
+						                                            echo $message;
+						                                            Session::put('message', null);
+						                                        }
+						                                    echo "</h3>";
+						                                echo "</div>";
+						                            ?> 
+													<ul>
+														<li>Họ và tên :</li>
+														<li>{{ $profile->user_name }}</li>
+														<li>Email :</li>
+														<li>{{ $profile->user_email }}</li>
+														<li>SĐT :</li>
+														<li>{{ $profile->user_phone }}</li>
+														<li>Độ tuổi :</li>
+														<li>{{ $profile->user_age }}</li>
+														<li>Giới tính :</li>
+														<li>{{ $profile->user_gender }}</li>
+														<li>Khu vực :</li>
+														<li>{{ $profile->user_city }}, TP. Đà Nẵng</li>
+														<li>Vị trí sở trường :</li>
+														<li>{{ $profile->user_clb_vt }}</li>
+													</ul>
+													<div class="tg-btnbox">
+														<button class="tg-btn" data-toggle="modal" data-target="#myModal" type="button" style="top: 20px;">Cập Nhật Lại</button>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-					</div>
-					<section class="section-form">
-							<div class="container1">
-							  <!-- Modal -->
-							  <div class="modal fade" id="myModal" role="dialog">
-							    <div class="modal-dialog modal-md">
-							      <div class="modal-content">
-							        <div class="modal-header">
-							          <button type="button" class="close" data-dismiss="modal">&times;</button>
-							          <h4 class="modal-title">Form Cập nhật</h4>
-							        </div>
-							        <div class="modal-body">
-							          <main class="main123">
-							            <div class="container1">
-							                <div class="register-form">
-							                    <form action="{{URL::TO('/update-profile-person/'.$user_id)}}" method="post" enctype="multipart/form-data">
-							                    	{{ csrf_field() }}
-							                        <h1 class="h123">Cập nhật hồ sơ cá nhân</h1>
-							                        <div class="input-box">
-							                            <input name="profile_email" type="email" value="{{ $profile->user_email }}">
-							                        </div>
-							                        <div class="input-box">
-							                            <input name="profile_name" type="text" value="{{ $profile->user_name }}">
-							                        </div>
-							                        <div class="input-box">
-							                            <input name="profile_phone" type="text" value="{{ $profile->user_phone }}">
-							                        </div>
-							                        
-							                        <select class="form-control" name="profile_city">
-														<option value="Quận Sơn Trà">Quận Sơn Trà</option>
-														<option value="Quận Thanh Khê">Quận Thanh Khê</option>
-														<option value="Quận Ngũ Hành Sơn">Quận Ngũ Hành Sơn</option>
-														<option value="Quận Hải Châu">Quận Hải Châu</option>
-														<option value="Quận Liên Chiểu">Quận Liên Chiểu</option>
-														<option value="Quận Cẩm Lệ">Quận Cẩm Lệ</option>
-														<option value="Huyện Hoà Vang">Huyện Hoà Vang</option>
-													</select>
-							                      
-							                        <div class="input-box">
-							                            <div class="col-6">
-							                                <label for="gioitinh">Giới tính</label>
-							                                <select name="profile_gender" id="gioitinh">
-							                                    <option value="Nam">Nam</option>
-							                                    <option value="Nữ">Nữ</option>
-							                                </select>
-							                                <label for="vtst">Vị trí sở trường</label>                              <select name="profile_vtst" id="vtst">
-                                                                <option value="Tiền đạo">Tiền đạo</option>
-                                                                <option value="Tiền vệ cánh">Tiền vệ cánh</option>
-                                                                <option value="Tiền vệ trung tâm">Tiền vệ trung tâm</option>
-                                                                <option value="Hậu vệ">Hậu vệ</option>
-                                                                <option value="Thủ môn">Thủ môn</option>
-                                                            </select>
-							                            </div>
-							                            <div class="clear"></div>
-							                            <div class="col-6">
-							                                <label for="age">Độ tuổi</label>
-							                                <select name="profile_age" id="age">
-							                                    <option value="U15-U20">U15-U20</option>
-						                                        <option value="U20-U30">U20-U30</option>
-						                                        <option value="U30-U35">U30-U35</option>
-						                                        <option value="U35-U40">U35-U40</option>
-							                                </select>
-							                            </div>
-							                            <div class="clear"></div>
-							                        </div>
-							                        <div class="input-box">
-							                            <label for="avatar">Cập nhật avatar</label>
-							                            <input type="file" id="avatar" name="profile_avatar"  placeholder="Cập nhật avatar">
-							                            <img src="{{URL::TO('../public/uploads/avatar-user/'.$profile->user_avatar)}}" alt="avatar-user" height="50" width="50">
-							                        </div>
-							                        <div class="btn-box">
-							                            <button type="submit">
-							                                Cập nhật
-							                            </button>
-							                        </div>
-							                    </form>
-							                </div>
-							            </div>
-							        </main>
-							        @endforeach
-							        </div>
-							        <div class="modal-footer">
-							          	<button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
-							        </div>
-							    </div>
-							   	</div>
-							  </div>
-							</div>
-					</section>
+							<section class="section-form">
+								<div class="container1">
+								  <!-- Modal -->
+								  <div class="modal fade" id="myModal" role="dialog">
+								    <div class="modal-dialog modal-md">
+								      <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">Form Cập nhật</h4>
+								        </div>
+								        <div class="modal-body">
+								          <main class="main123">
+								            <div class="container1">
+								                <div class="register-form">
+								                    <form action="{{URL::TO('/update-profile-person/'.$user_id)}}" method="post" enctype="multipart/form-data">
+								                    	{{ csrf_field() }}
+								                        <h1 class="h123">Cập nhật hồ sơ cá nhân</h1>
+								                        <div class="input-box">
+								                            <input name="profile_email" type="email" value="{{ $profile->user_email }}">
+								                        </div>
+								                        <div class="input-box">
+								                            <input name="profile_name" type="text" value="{{ $profile->user_name }}">
+								                        </div>
+								                        <div class="input-box">
+								                            <input name="profile_phone" type="text" value="{{ $profile->user_phone }}">
+								                        </div>
+								                        
+								                        <select class="form-control" name="profile_city">
+															<option value="Quận Sơn Trà">Quận Sơn Trà</option>
+															<option value="Quận Thanh Khê">Quận Thanh Khê</option>
+															<option value="Quận Ngũ Hành Sơn">Quận Ngũ Hành Sơn</option>
+															<option value="Quận Hải Châu">Quận Hải Châu</option>
+															<option value="Quận Liên Chiểu">Quận Liên Chiểu</option>
+															<option value="Quận Cẩm Lệ">Quận Cẩm Lệ</option>
+															<option value="Huyện Hoà Vang">Huyện Hoà Vang</option>
+														</select>
+								                      
+								                        <div class="input-box">
+								                            <div class="col-6">
+								                                <label for="gioitinh">Giới tính</label>
+								                                <select name="profile_gender" id="gioitinh">
+								                                    <option value="Nam">Nam</option>
+								                                    <option value="Nữ">Nữ</option>
+								                                </select>
+								                                <label for="vtst">Vị trí sở trường</label>                              <select name="profile_vtst" id="vtst">
+	                                                                <option value="Tiền đạo">Tiền đạo</option>
+	                                                                <option value="Tiền vệ cánh">Tiền vệ cánh</option>
+	                                                                <option value="Tiền vệ trung tâm">Tiền vệ trung tâm</option>
+	                                                                <option value="Hậu vệ">Hậu vệ</option>
+	                                                                <option value="Thủ môn">Thủ môn</option>
+	                                                            </select>
+								                            </div>
+								                            <div class="clear"></div>
+								                            <div class="col-6">
+								                                <label for="age">Độ tuổi</label>
+								                                <select name="profile_age" id="age">
+								                                    <option value="U15-U20">U15-U20</option>
+							                                        <option value="U20-U30">U20-U30</option>
+							                                        <option value="U30-U35">U30-U35</option>
+							                                        <option value="U35-U40">U35-U40</option>
+								                                </select>
+								                            </div>
+								                            <div class="clear"></div>
+								                        </div>
+								                        <div class="input-box">
+								                            <label for="avatar">Cập nhật avatar</label>
+								                            <input type="file" id="avatar" name="profile_avatar"  placeholder="Cập nhật avatar">
+								                            <img src="{{URL::TO('../public/uploads/avatar-user/'.$profile->user_avatar)}}" alt="avatar-user" height="50" width="50">
+								                        </div>
+								                        <div class="btn-box">
+								                            <button type="submit">
+								                                Cập nhật
+								                            </button>
+								                        </div>
+								                    </form>
+								                </div>
+								            </div>
+								        </main>
+								        @endforeach
+								        </div>
+								        <div class="modal-footer">
+								          	<button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+								        </div>
+								    </div>
+								   	</div>
+								  </div>
+								</div>
+							</section>
 						</section>
 						<div class="col-sm-3 col-xs-12">
 							<aside  class="tg-sidebar">

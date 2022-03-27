@@ -44,6 +44,7 @@ class ProfileController extends Controller
         }else return Redirect::to('/404')->send();
 
     }
+    
     public function update_profile_person(Request $request, $user_id){
     	$this->AuthLogin();
         $user_id1 = Session::get('user_id');  
@@ -56,16 +57,16 @@ class ProfileController extends Controller
             $data['user_age'] = $request->profile_age;
             $data['user_gender'] = $request->profile_gender;
             $data['user_clb_vt'] = $request->profile_vtst;
-            // $data['meta_product_keywords'] = $request->meta_product_keywords;
+
             $get_image = $request->file('profile_avatar');
 
             if($get_image){
                 $get_name_image = $get_image->getClientOriginalName();
-                $name_image = current(explode('.', $get_name_image)); //current(explode('.', $get_name_image)); chia chuỗi ra để cắt đuôi từ dấu chấm
+                $name_image = current(explode('.', $get_name_image)); 
                 $new_custom_name_image = $name_image.'('.rand(0,99).')'.'.'.$get_image->getClientOriginalExtension(); 
-                //getClientOriginalExtention():lấy đuôi mở rộng
                 $get_image->move('../public/uploads/avatar-user', $new_custom_name_image);
                 $data['user_avatar'] = $new_custom_name_image;
+                
                 DB::table('tbl_user')->where('user_id', $user_id)->update($data);
                 Session::put('message', 'Cập nhật thông tin thành công!');
                 return Redirect::to('/profile-person/'.$user_id);

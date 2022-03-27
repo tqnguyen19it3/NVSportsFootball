@@ -1016,7 +1016,7 @@
                                     </div>
                     <div class="col-md-7 col-sm-12 col-xs-12">
                         <fieldset>
-{{--                             <form action="{{URL::TO('/send-mail')}}" method="get" enctype="text/plain" class="needs-validation" novalidate>
+                            <form action="{{URL::TO('/send-mail')}}" method="post" class="needs-validation">
                                 {{csrf_field()}}
                                 <div class="form-group">
                                     <label>Tên</label>
@@ -1024,7 +1024,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="text" name="contact_mail" class="form-control" placeholder="Enter email" required>
+                                    <input type="text" name="contact_email" class="form-control" placeholder="Enter email" required>
                                 </div>
                                 <div class="form-group">
                                     <label>Số Điện Thoại</label>
@@ -1041,8 +1041,8 @@
                                 <div class="form-group">
                                     <button style="font:700 14px/35px 'Oswald', Arial, Helvetica, sans-serif;" class="tg-btn" type="submit" data-toggle="tooltip" title="I'd love your feedback!">Gửi</button>
                                 </div>
-                            </form> --}}
-                            <form action="MAILTO:tqnguyen.19it3@vku.udn.vn" method="post" enctype="text/plain" class="needs-validation" novalidate>
+                            </form>
+{{--                             <form action="MAILTO:tqnguyen.19it3@vku.udn.vn" method="post" enctype="text/plain" class="needs-validation" novalidate>
                                 <div class="form-group">
                                     <label>Tên</label>
                                     <input type="text" name="Name" class="form-control" placeholder="Enter username" required>
@@ -1066,7 +1066,7 @@
                                 <div class="form-group">
                                     <button style="font:700 14px/35px 'Oswald', Arial, Helvetica, sans-serif;" class="tg-btn" type="submit" data-toggle="tooltip" title="I'd love your feedback!">Gửi</button>
                                 </div>
-                            </form>
+                            </form> --}}
                         </fieldset>
                     </div>
                 </section>

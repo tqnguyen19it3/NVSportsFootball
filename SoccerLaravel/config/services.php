@@ -31,8 +31,8 @@ return [
     ],
 
     'facebook' => [
-        'client_id' => '714139636150031',
-        'client_secret' => 'a021329a0c23172ac6df1e6fda30655b',  
+        'client_id' => '2763403467285041',
+        'client_secret' => 'd9fef9f901c939d07958a72cd01fed7e',  
         // 'redirect' => 'http://nvsportsfootball.com:2509/SoccerLaravel/public/login/callback'
         'redirect' => 'http://localhost:2509/SoccerLaravel/public/login/callback'
     ],

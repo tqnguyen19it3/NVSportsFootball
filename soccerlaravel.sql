@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 05, 2021 lúc 11:00 AM
+-- Thời gian đã tạo: Th3 27, 2022 lúc 02:53 PM
 -- Phiên bản máy phục vụ: 10.4.17-MariaDB
 -- Phiên bản PHP: 8.0.1
 
@@ -279,7 +279,8 @@ INSERT INTO `tbl_social` (`customer_id`, `provider_customer_id`, `provider`, `cu
 (5, '115709332834982721378', 'GOOGLE', 16),
 (16, '111192653827368292764', 'GOOGLE', 9),
 (17, '109326143753477962393', 'GOOGLE', 26),
-(18, '2848142192072031', 'FACEBOOK', 27);
+(18, '2848142192072031', 'FACEBOOK', 27),
+(19, '3013393088880273', 'FACEBOOK', 27);
 
 -- --------------------------------------------------------
 
@@ -695,7 +696,7 @@ ALTER TABLE `tbl_schedule`
 -- AUTO_INCREMENT cho bảng `tbl_social`
 --
 ALTER TABLE `tbl_social`
-  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_time_price`

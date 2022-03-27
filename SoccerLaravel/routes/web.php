@@ -152,8 +152,8 @@ Route::get('/gioi-thieu/{yard_system_slug}/{yard_system_id}/{post_yardsys_id}', 
 
 
 //===SEND MAIL===//
-Route::get('/send-mail', 'App\Http\Controllers\HomeController@send_mail');
-// Route::post('/send-mail1', 'App\Http\Controllers\HomeController@send_mail1');
+// Route::get('/send-mail', 'App\Http\Controllers\HomeController@send_mail');
+Route::post('/send-mail', 'App\Http\Controllers\HomeController@send_mail');
 //===END SEND MAIL===//
 
 

@@ -77,9 +77,10 @@
                               <select name="yardsystemQuan" class="form-control">
                                 @foreach($quan as $key => $q)
                                 @if($q->quan_id == $system_yard->quan_id)
-                                <option selected="" value="{{$system_yard->quan_id}}">{{$q->quan_ten}}</option>
-                                @endif
+                                <option selected value="{{$q->quan_id}}">{{$q->quan_ten}}</option>
+                                @else
                                 <option value="{{$q->quan_id}}">{{$q->quan_ten}}</option>
+                                @endif
                                 @endforeach
                               </select>
                             </div>
